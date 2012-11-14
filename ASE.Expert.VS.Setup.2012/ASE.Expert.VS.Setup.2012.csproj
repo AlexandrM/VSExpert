@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88CB5D72-021B-42E1-9E69-0B1C0B93E8C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASE.Expert.VS.Setup._2012</RootNamespace>
+    <AssemblyName>ASE.Expert.VS.Setup.2012</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASEExpertVS2005.About\ASEExpertVS2005.About.csproj">
+      <Project>{bea1e80a-867c-4aab-80ae-3bf0cc923cd4}</Project>
+      <Name>ASEExpertVS2005.About</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASEExpertVS2005.AddProperty\ASEExpertVS2005.AddProperty.csproj">
+      <Project>{c2f778f7-0516-4549-995f-475ed39bc1c4}</Project>
+      <Name>ASEExpertVS2005.AddProperty</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASEExpertVS2005.CodeItemsList\ASEExpertVS2005.CodeItemsList.csproj">
+      <Project>{b3b444b8-feb2-4c1b-9aa7-d7fdada7215e}</Project>
+      <Name>ASEExpertVS2005.CodeItemsList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASEExpertVS2005.CodeKeeper\ASEExpertVS2005.CodeKeeper.csproj">
+      <Project>{9fd56977-486c-4dc3-b8d7-7af487eea033}</Project>
+      <Name>ASEExpertVS2005.CodeKeeper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASEExpertVS2005.RebindShortcuts\ASEExpertVS2005.RebindShortcuts.csproj">
+      <Project>{5e4ab826-165b-4b35-a112-721071d88f12}</Project>
+      <Name>ASEExpertVS2005.RebindShortcuts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASEExpertVS2005.Sample\ASEExpertVS2005.Sample.csproj">
+      <Project>{e085f502-eb0f-433b-8c86-51f9e8c6ff55}</Project>
+      <Name>ASEExpertVS2005.Sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASEExpertVS2005.SolutionList\ASEExpertVS2005.SolutionList.csproj">
+      <Project>{3fd2e7ff-0684-449d-a7a2-7c7dd1b2ec15}</Project>
+      <Name>ASEExpertVS2005.SolutionList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASEExpertVS2005\ASEExpertVS2005.csproj">
+      <Project>{57dde1ff-fc49-4c2a-91f6-b6d626008f9f}</Project>
+      <Name>ASEExpertVS2005</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(SolutionDir)ASEExpertVS2005\bin\*.dll $(TargetDir)*.*
+copy $(SolutionDir)ASEExpertVS2005\bin\*.config $(TargetDir)*.*
+copy $(SolutionDir)ASEExpertVS2005.AddIn $(TargetDir)*.*</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
