@@ -1,0 +1,1 @@
+copy d:\WORK\ASE.Expert.VS\ASE.Expert.VS.Setup.2012\bin\Release\*.dll d:\Tools\ASE.Expert.VS\*.*
