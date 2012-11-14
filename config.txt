@@ -1,0 +1,5 @@
+﻿;!@Install@!UTF-8!
+BeginPrompt="Install ASE Expert VS 2005-2012 in subfolder [ASE.Expert.VS.Setup]"
+InstallPath="."
+RunProgram="ASE.Expert.VS.Setup\ASE.Expert.VS.Setup.2012.exe"
+;!@InstallEnd@!

@@ -1,0 +1,3 @@
+ASE.Expert.VS.Setup\*.dll
+ASE.Expert.VS.Setup\*.AddIn
+ASE.Expert.VS.Setup\ASE.Expert.VS.Setup.2012.exe
