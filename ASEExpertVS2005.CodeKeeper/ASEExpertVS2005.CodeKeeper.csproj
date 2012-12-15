@@ -78,7 +78,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\ASE\Xml\XmlIni.cs">
+    <Compile Include="..\ASEExpertVS2005\XmlIni.cs">
       <Link>XmlIni.cs</Link>
     </Compile>
     <Compile Include="FmMain.cs">
